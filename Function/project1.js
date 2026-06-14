@@ -42,6 +42,11 @@ Below 18
 */
 
 function checkAge(age) {
+
+    if (typeof age != "number" || age <= 0) {
+        console.log("Invalid age");
+        return;
+    }
     if (age < 18) {
         console.log("Minor");
     }
@@ -54,6 +59,8 @@ function checkAge(age) {
 
 }
 
+checkAge(-9)
+checkAge("Joe")
 checkAge(15);
 checkAge(109);
 checkAge(45);
@@ -71,8 +78,46 @@ E.g.
 */
 
 function calculateGST(amount) {
+
     let GST = 18 / 100 * amount;
     return GST + amount;
 }
 console.log(calculateGST(1000));
 console.log(calculateGST(50));
+
+
+
+
+// Challenge A:
+
+function calculateRectanagleArea(length, width) {
+    return area = length * width;
+}
+
+// Challenge B:
+
+function isEvenNumber(num) {
+
+    if (num % 2 != 0) {
+        return false;
+    } else {
+        return true;
+    }
+
+}
+
+// Challenge C:
+
+function calculateTotalMarks(mark1, mark2, mark3) {
+    return mark1 + mark2 + mark3;
+}
+
+function calculatePercentage(mark1, mark2, mark3) {
+    const totalMarks = calculateTotalMarks(mark1, mark2, mark3);
+    return totalMarks / 300 * 100;
+}
+
+calculateRectanagleArea(10, 5);
+isEvenNumber(8);
+isEvenNumber(5);
+console.log(calculatePercentage());;
