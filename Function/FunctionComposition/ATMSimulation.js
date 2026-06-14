@@ -9,21 +9,27 @@ ATM Simulation: deposit, withdraw, checkBalance
 */
 
 let balance = 0;
+
 function deposit(amt) {
-    if (amt > 0) {
-        return balance = balance + amt;
 
+    if (amt <= 0) {
+        console.log("Invalid Amount");
+        return;
     }
-
-
+    balance += amt;
+    return balance
 }
 
 function withdraw(amt) {
-    if (balance <= 0 || amt > balance) {
-        console.log("Insufficient balance!");
-    } else {
-        balance = balance - amt;
+    if (amt <= 0) {
+        console.log("Invalid Amount");
+        return;
     }
+    if (amt > balance) {
+        console.log("Insufficient balance!");
+        return;
+    }
+    balance -= amt
 
     return balance
 }
@@ -42,7 +48,7 @@ checkBalance()
 withdraw(15000);
 checkBalance();
 
-deposit(500);
+deposit(-500);
 checkBalance();
 
 withdraw(1000);
