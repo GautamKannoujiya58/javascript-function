@@ -17,7 +17,7 @@ function calculateAverage(expenses) {
 }
 
 function findLargestExpense(expenses) {
-    let avg = calculateAverage(expenses);
+
     let largestExpensse = expenses[0];
     for (const expense of expenses) {
         if (expense > largestExpensse) {
@@ -35,35 +35,3 @@ console.log(calculateAverage(expenses));
 // console.log(totalExpense); // ReferenceError: totalExpense is not defined
 
 
-const name = "Gautam";
-
-function test() {
-
-    const name = "Kumar";
-
-    function inner() {
-        console.log(name);
-    }
-
-    inner();
-}
-
-test();
-
-// ------------------
-const name = "Gautam";
-
-function outer() {
-
-    const name = "Kumar";
-
-    function inner() {
-        console.log(name);
-    }
-
-    return inner;
-}
-
-const fn = outer();
-
-fn();

@@ -21,6 +21,10 @@ because:
 */
 
 
+// Challenge 1 (Easy)
+
+// Convert these to Arrow Functions.
+
 const greet = (name) => {
     console.log(name)
 
@@ -39,3 +43,16 @@ const isAdultAge = (age) => {
     return age >= 18;
 }
 console.log(isAdultAge(45));
+
+
+// Challenge 2 (Easy)
+
+// Create an arrow function:
+
+const calculateDiscount = (price) => {
+    let discount = 0.1 * price;
+    let sellingPrice = price - discount;
+    return sellingPrice;
+}
+console.log(calculateDiscount(1000));
+console.log(calculateDiscount(500));
