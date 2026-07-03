@@ -1,0 +1,5 @@
+Phase 1: Modifying Arrays
+    push() ✅ (Add to end)
+    pop() ✅ (Remove from end)
+    unshift() ✅ (Add to beginning)
+    shift() ✅ (Remove from beginning)

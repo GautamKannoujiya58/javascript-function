@@ -28,8 +28,23 @@ console.log(numbers[-1]); // undefined
 
 
 // 🚨 Hidden Interview Insight
-const arr = [10, 20, 30];
-arr[-1] = 999;
-console.log(arr); // 999,10,20,30
-console.log(arr[-1]); // 999
-console.log(arr.length); // 4
+const arr1 = [10, 20, 30];
+arr1[-1] = 999;
+console.log(arr1); // [ 10, 20, 30, '-1': 999 ]
+console.log(arr1[-1]); // 999
+console.log(arr1.length); // 3
+
+console.log(typeof arr1);
+
+// Interview Question: Sparse Array
+
+const arr2 = [10, 20];
+arr2[5] = 30;
+console.log(arr2); // 10, 20, __, __, __, 30
+console.log(arr2.length); // 6
+console.log(">>>", arr2[3]);
+
+// Another Question
+const arr3 = [10, 20];
+console.log(arr3[2]); // undefined
+console.log(2 in arr3); // 
