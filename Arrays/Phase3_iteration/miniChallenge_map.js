@@ -36,10 +36,12 @@ const products = [
     { name: "Laptop", price: 10000 },
     { name: "Mouse", price: 1000 }
 ]
-const names = []
+
 const productNames = (products, names) => {
     return products.map(product => product.name)
 
 
 }
 console.log(productNames(products));
+console.log(productNames);
+// console.log(products);
