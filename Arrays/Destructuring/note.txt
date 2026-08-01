@@ -1,0 +1,59 @@
+What is Destructuring
+-> 
+
+what JavaScript actually does, because this is where beginners start memorizing instead of understanding.
+
+When JavaScript sees
+
+const { id, name, department, salary } = employee;
+
+Most people think it's some magical syntax.
+
+It isn't.
+
+Internally JavaScript is basically doing this:
+
+const id = employee.id;
+const name = employee.name;
+const department = employee.department;
+const salary = employee.salary;
+
+That's literally it.
+
+
+-------------------
+Why the {}?
+
+This is the most important thing to remember.
+
+When JavaScript sees
+
+const { name } = employee;
+
+it reads it as
+
+"Go inside the object employee..."
+
+"...find a property called name..."
+
+"...create a variable called name."
+
+Notice something?
+
+The property name
+
+name
+
+and the variable name
+
+name
+
+are the same.
+
+That's why we can write
+
+const { name } = employee;
+
+instead of
+
+const name = employee.name;
