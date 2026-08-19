@@ -1,0 +1,17 @@
+🚀 Welcome to Spread & Rest (...)
+
+This topic confuses almost everyone initially because...
+
+the symbol is identical.
+
+...
+
+Same symbol.
+
+Two completely different meanings.
+
+Most beginners ask:
+
+"How does JavaScript know which one it is?"
+
+That's exactly where we'll start.
