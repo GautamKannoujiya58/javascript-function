@@ -1,0 +1,9 @@
+.stock-available {
+  color: green;
+  background-color: #e6f4ea;
+}
+
+.stock-unavailable {
+  color: red;
+  background-color: #fde8e8;
+}
